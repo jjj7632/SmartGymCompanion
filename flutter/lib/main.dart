@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
-    HomePage(),
+    const HomePage(),
     PlaceholderWidget(color: Colors.yellow),
     PlaceholderWidget(color: Colors.green),
     PlaceholderWidget(color: Colors.blue),
@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
               _currentIndex = index;
             });
            },
-           items: [
+           items: const [
             BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
             BottomNavigationBarItem(icon: Icon(Icons.timeline), label: 'Data'),
             BottomNavigationBarItem(icon: Icon(Icons.add), label: 'Add Workout'),
@@ -84,7 +84,7 @@ class PlaceholderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: color,
-      child: Center(
+      child: const Center(
         child: Text('Page Content', style: TextStyle(color: Colors.white)),
       ),
     );
