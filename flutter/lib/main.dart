@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
-    PlaceholderWidget(color: Colors.red),
+    HomePage(),
     PlaceholderWidget(color: Colors.yellow),
     PlaceholderWidget(color: Colors.green),
     PlaceholderWidget(color: Colors.blue),
