@@ -34,8 +34,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   final List<Widget> _pages = [
     PlaceholderWidget(color: Colors.red),
+    PlaceholderWidget(color: Colors.yellow),
     PlaceholderWidget(color: Colors.green),
-    PlaceholderWidget(color: Colors.blue)
+    PlaceholderWidget(color: Colors.blue),
+    PlaceholderWidget(color: Colors.orange)
   ];
 
   @override
@@ -51,6 +53,8 @@ class _MyHomePageState extends State<MyHomePage> {
         child: BottomNavigationBar(
            iconSize: 20,
            selectedFontSize: 10,
+           unselectedItemColor: Colors.grey,
+           selectedItemColor: Colors.black,
            currentIndex: _currentIndex,
            onTap: (index) {
             setState(() {
@@ -59,8 +63,10 @@ class _MyHomePageState extends State<MyHomePage> {
            },
            items: [
             BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-            BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search')
+            BottomNavigationBarItem(icon: Icon(Icons.timeline), label: 'Data'),
+            BottomNavigationBarItem(icon: Icon(Icons.add), label: 'Add Workout'),
+            BottomNavigationBarItem(icon: Icon(Icons.help), label: 'Support'),
+            BottomNavigationBarItem(icon: Icon(Icons.info), label: 'Info')
            ],
         ),
       ),
