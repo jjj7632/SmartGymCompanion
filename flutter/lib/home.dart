@@ -17,8 +17,30 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context){
-    return Scaffold(
-      body: Text("Home page"),
+    return Center(
+      child: Column(
+        children: [
+          SizedBox(height: 50,),
+          Text(
+            "Device Name",
+            textScaleFactor: 3.5,
+          ),
+          SizedBox(height: 50,),
+          ElevatedButton(
+            onPressed: null,
+            child: Text(
+              "Start Workout",
+              textScaleFactor: 1.5,
+            ),
+            style: ElevatedButton.styleFrom(
+              fixedSize: Size(300, 50),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(15.0)
+              )
+            ),
+          )
+        ]
+        ),
     );
   }
 }
