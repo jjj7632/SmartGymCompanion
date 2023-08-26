@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\jgsol\OneDrive - rit.edu\Desktop\Personal Project\SmartGymCompanion\flutter\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jgsol\OneDrive - rit.edu\Desktop\Personal Project\SmartGymCompanion\flutter\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jgsol\OneDrive - rit.edu\Desktop\Personal Project\SmartGymCompanion\flutter\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jgsol\OneDrive - rit.edu\Desktop\Personal Project\SmartGymCompanion\flutter\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\jgsol\OneDrive - rit.edu\Desktop\Personal Project\SmartGymCompanion\flutter\windows\flutter\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3FF4CC0C-8D97-3D6B-94F8-4BFA9B6EC3F1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E3FE42B0-F216-338E-A6DA-F6763D65A99E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
