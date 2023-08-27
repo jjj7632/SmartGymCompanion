@@ -9,7 +9,8 @@ class CommonButton extends StatelessWidget {
   final VoidCallback? onPressed;
 
 
-  const CommonButton({super.key, 
+  const CommonButton({
+    super.key, 
     required this.label, 
     this.textScale, 
     this.width, 
