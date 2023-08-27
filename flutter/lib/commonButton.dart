@@ -34,7 +34,9 @@ class CommonButton extends StatelessWidget {
         fixedSize: Size(width ?? 300, height ?? 50),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15.0)
-        )
+        ),
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
       ),
       child: Text(
         label,
