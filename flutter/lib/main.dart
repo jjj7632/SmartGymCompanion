@@ -1,5 +1,13 @@
+/// Main
+/// 
+/// Root of the App
+/// 
+/// Author: Patricio Solis
+/// Created on: Aug 26, 2023
+
 import 'package:flutter/material.dart';
 import 'home.dart';
+import 'placeHolder.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,6 +41,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _currentIndex = 0;
 
+  // List of pages bottom bar indexes correspond to (max 5)
   final List<Widget> _pages = [
     const HomePage(),
     PlaceholderWidget(color: Colors.yellow),
@@ -57,13 +66,14 @@ class _MyHomePageState extends State<MyHomePage> {
            unselectedItemColor: Colors.grey,
            selectedItemColor: Colors.black,
            currentIndex: _currentIndex,
+           // Listens to which index of bottom bar is tapped and changes index accordingly
            onTap: (index) {
             setState(() {
               _currentIndex = index;
             });
            },
            items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
             BottomNavigationBarItem(icon: Icon(Icons.timeline), label: 'Data'),
             BottomNavigationBarItem(icon: Icon(Icons.add), label: 'Add Workout'),
             BottomNavigationBarItem(icon: Icon(Icons.help), label: 'Support'),
@@ -75,18 +85,3 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-class PlaceholderWidget extends StatelessWidget {
-  final Color color;
-
-  PlaceholderWidget({required this.color});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: color,
-      child: const Center(
-        child: Text('Page Content', style: TextStyle(color: Colors.white)),
-      ),
-    );
-  }
-}

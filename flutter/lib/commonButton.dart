@@ -1,3 +1,11 @@
+/// common Button
+/// 
+/// The style of button to be used for all
+/// buttons in the app
+/// 
+/// Author: Patricio Solis
+/// Created on: Aug 26, 2023
+
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -8,14 +16,14 @@ class CommonButton extends StatelessWidget {
   final double? height;
   final VoidCallback? onPressed;
 
-
+  // CommonButton Constructor
   const CommonButton({
     super.key, 
-    required this.label, 
-    this.textScale, 
-    this.width, 
-    this.height,
-    this.onPressed
+    required this.label,   // button text
+    this.textScale,       // size of text in button
+    this.width,           // width of button
+    this.height,          // height of button
+    this.onPressed        // function button calls
     });
 
   @override
