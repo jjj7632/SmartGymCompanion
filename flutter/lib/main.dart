@@ -6,15 +6,28 @@
 /// Created on: Aug 26, 2023
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'home.dart';
 import 'placeHolder.dart';
+import 'provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => PageState(),
+      child: Consumer<PageState>(
+        builder: (context, pageState, child) {
+          return MyApp(currentPageIndex: pageState.currentPageIndex);
+        },
+      )
+    )
+  );
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final int currentPageIndex;
+
+  const MyApp({super.key, required this.currentPageIndex});
 
   // This widget is the root of your application.
   @override
@@ -25,20 +38,23 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Pumped'),
+      home: MyHomePage(title: 'Pumped', currentIndex: currentPageIndex),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title}); 
+  const MyHomePage({Key? key, required this.title, required this.currentIndex}) : super(key: key);
+
   final String title;
+  final int currentIndex;
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
   int _currentIndex = 0;
 
   // List of pages bottom bar indexes correspond to (max 5)
@@ -52,6 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    _currentIndex = widget.currentIndex;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 255, 255, 255),
@@ -69,7 +86,8 @@ class _MyHomePageState extends State<MyHomePage> {
            // Listens to which index of bottom bar is tapped and changes index accordingly
            onTap: (index) {
             setState(() {
-              _currentIndex = index;
+              Provider.of<PageState>(context, listen: false)
+                .setCurrentIndex(index);
             });
            },
            items: const [
