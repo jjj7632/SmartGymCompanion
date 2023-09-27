@@ -1,0 +1,28 @@
+^C:\USERS\ISSAC\PERSONAL PROJECTS\SMARTGYMCOMPANION\FLUTTER\BUILD\WINDOWS\CMAKEFILES\7652E377BA7ED98CBDD7330901019EC0\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Users\issac\Downloads\flutter_windows_3.13.1-stable\flutter "PROJECT_DIR=C:\Users\issac\Personal Projects\SmartGymCompanion\flutter" FLUTTER_ROOT=C:\Users\issac\Downloads\flutter_windows_3.13.1-stable\flutter "FLUTTER_EPHEMERAL_DIR=C:\Users\issac\Personal Projects\SmartGymCompanion\flutter\windows\flutter\ephemeral" "PROJECT_DIR=C:\Users\issac\Personal Projects\SmartGymCompanion\flutter" "FLUTTER_TARGET=C:\Users\issac\Personal Projects\SmartGymCompanion\flutter\lib\main.dart" DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC9iMjAxODNlMDQwOTYwOTRiY2MzN2Q5Y2RlMmE0Yjk2ZjVjYzY4NGNmLw== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false "PACKAGE_CONFIG=C:\Users\issac\Personal Projects\SmartGymCompanion\flutter\.dart_tool\package_config.json" C:/Users/issac/Downloads/flutter_windows_3.13.1-stable/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ISSAC\PERSONAL PROJECTS\SMARTGYMCOMPANION\FLUTTER\BUILD\WINDOWS\CMAKEFILES\20EAFD92BD08F89852C344A00E037A90\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ISSAC\PERSONAL PROJECTS\SMARTGYMCOMPANION\FLUTTER\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/issac/Personal Projects/SmartGymCompanion/flutter/windows" "-BC:/Users/issac/Personal Projects/SmartGymCompanion/flutter/build/windows" --check-stamp-file "C:/Users/issac/Personal Projects/SmartGymCompanion/flutter/build/windows/flutter/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

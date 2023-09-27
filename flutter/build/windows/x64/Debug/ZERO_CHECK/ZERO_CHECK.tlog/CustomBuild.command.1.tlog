@@ -1,0 +1,10 @@
+^C:\USERS\ISSAC\PERSONAL PROJECTS\SMARTGYMCOMPANION\FLUTTER\BUILD\WINDOWS\CMAKEFILES\2AFC16F015FE1CC52DA63636254C1E53\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/issac/Personal Projects/SmartGymCompanion/flutter/windows" "-BC:/Users/issac/Personal Projects/SmartGymCompanion/flutter/build/windows" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/issac/Personal Projects/SmartGymCompanion/flutter/build/windows/gymdevice.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
